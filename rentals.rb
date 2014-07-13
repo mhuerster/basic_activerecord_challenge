@@ -66,14 +66,14 @@ class User < ActiveRecord::Base
   has_many :cars, :through => :rental_cars
 end
 
+class RentalCar < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :car
+end
 
 class Car < ActiveRecord::Base
   has_many :rental_cars
   has_many :users, through: :rental_cars
-end
-
-class RentalCar < ActiveRecord::Base
-
 end
 
 
