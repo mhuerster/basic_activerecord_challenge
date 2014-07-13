@@ -7,11 +7,13 @@ ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
 ActiveRecord::Migration.create_table :users do |t|
   t.string :name
+  t.string :credit_card
 end
 
 ActiveRecord::Migration.create_table :cars do |t|
-  t.string :type
+  t.string :model
   t.string :color
+  t.string :make
 end
 
 ActiveRecord::Migration.create_table :rental_cars do |t|
@@ -36,4 +38,8 @@ class RentalCar < ActiveRecord::Base
   belongs_to :car
   belongs_to :user
 end
+
+
+# Seeding DB
+
 
