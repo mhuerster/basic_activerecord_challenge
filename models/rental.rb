@@ -1,4 +1,4 @@
 class Rental < ActiveRecord::Base
-  has_many :users
-  has_many :cars
+  belongs_to :user
+  belongs_to :car
 end
