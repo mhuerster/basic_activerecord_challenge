@@ -33,7 +33,7 @@ Stretch Goals
   @Customer.cars # returns all the cars for @customer
   @RentalCar.customer # returns a Customer
 ```
-<!--
+
 Run the tests to see the full set of requirements.
 
 ## Logistics
@@ -45,8 +45,9 @@ Why do it this way? By doing all the work in a single file (and using an in-memo
 
 ## Running the Challenge
 After you've run `bundle install`, run the challenge like so
+
 ```
-ruby -rminitest/pride bookings.rb
+rspec rentals_spec.rb
 ```
 
-There's a lot of failing tests, but don't be overwhelmed. Work through them one at a time. -->
+There's a lot of failing tests, but don't be overwhelmed. Work through them one at a time. 
