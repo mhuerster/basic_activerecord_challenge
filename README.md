@@ -19,10 +19,7 @@ Your challenge is to create migrations, AR classes and seed data for the followi
 3. Rental Car
 
 Stretch Goals
-4. Bookings
-5. Company
-5. Location (Ex. Airport)
-6. Rental Rates
+4. Validations - a user must be 25 or older, and each car's license plate must be unique
 
 ## Requirements
 * A car will have many rentals
