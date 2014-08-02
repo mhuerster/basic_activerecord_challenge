@@ -46,3 +46,9 @@ rspec rentals_spec.rb
 ```
 
 There's a lot of failing tests, but don't be overwhelmed. Work through them one at a time. 
+
+To experiment in the console, run 
+```
+irb -r./rentals.rb
+```
+This will drop you into an irb session with access to all the code you've written in your rentals.rb file.
