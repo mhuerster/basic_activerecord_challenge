@@ -22,6 +22,12 @@ describe Car do
 		car = Car.create(make:'Toyota', model:'Prius', state: 'NY', license_plate: 'AGY3559', year: 2010)
 		expect(car).to respond_to :rentals
 	end
+
+	# stretch - uncomment to run the test
+	xit 'has a unique license plate' do
+		car = Car.create(make: 'Honda', model: 'Civic', state: 'IL', license_plate: 'AGY3559')
+		expect(car.errors.messages[:license_plate]).to include('has already been taken')
+	end
 end
 
 describe RentalCar do
