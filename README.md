@@ -39,12 +39,10 @@ Run the tests to see the full set of requirements.
 ## Logistics
 This challenge uses AR in a way you're probably not used to. It uses an in-memory SQLite database. So you won't ever need to run `rake db:migrate` or `rake db:drop`. The entire database is created then dropped each time you run the Ruby file `bookings.rb`.
 
-Refer to the comments in `bookings.rb` for notes of how & where to write your migrations, class definitions and seeds code.
-
-Why do it this way? By doing all the work in a single file (and using an in-memory database) you'll get faster feedback on your work. Those tedious `rake` tasks take time and only serve as a distraction.
+Refer to this file and the comments in `rentals.rb` for notes of how & where to write your migrations, class definitions and seeds code.
 
 ## Running the Challenge
-After you've run `bundle install`, run the challenge like so
+After you've run `bundle install`, run the tests:
 
 ```
 rspec rentals_spec.rb
