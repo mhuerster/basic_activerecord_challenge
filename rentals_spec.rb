@@ -9,9 +9,9 @@ describe User do
 			age: 26)
 		expect(sam).to respond_to :cars
 	end
-	
+
 	# stretch - uncomment to run the test
-	xit 'must be 25 or older' do
+	it 'must be 25 or older' do
 		molly = User.create(name: 'Molly', state: 'NY', age: 23)
 		expect(molly.errors.messages[:age]).to include('must be greater than or equal to 25')
 	end
@@ -24,7 +24,7 @@ describe Car do
 	end
 
 	# stretch - uncomment to run the test
-	xit 'has a unique license plate' do
+	it 'has a unique license plate' do
 		car = Car.create(make: 'Honda', model: 'Civic', state: 'IL', license_plate: 'AGY3559')
 		expect(car.errors.messages[:license_plate]).to include('has already been taken')
 	end
